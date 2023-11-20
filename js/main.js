@@ -1,8 +1,6 @@
 
 //PARI E DISPARI 
 
-
-
 // SCELTA E PROMPT DEI DATI
 
 let pariDispariUtente = prompt("Scegli e scrivi Pari o Dispari").toLowerCase();
@@ -43,5 +41,18 @@ if (pariDispariUtente === risultato) {
     console.log("Hai Perso!");
 }
 
+// GIOCO PALINDROMO
 
+let parolaUtente = prompt("Scrivi una parola e ti dirò se è palindroma!").toLowerCase();
+
+function isPalindrome(word) {
+    let parolaInversa = word.split("").reverse().join("");
+    if (word === parolaInversa) {
+        alert("la parola è palindroma")
+    } else {
+        alert("la parola non è palindroma")
+    }
+}
+
+isPalindrome(parolaUtente);
 
